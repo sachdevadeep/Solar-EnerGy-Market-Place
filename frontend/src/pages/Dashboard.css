@@ -1,0 +1,190 @@
+/* Shared Dashboard Styles */
+.dashboard-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    animation: fadeIn 0.5s ease;
+}
+
+.dashboard-header {
+    margin-bottom: 3rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 1rem;
+}
+
+.dashboard-header h1 {
+    font-size: 2.5rem;
+    color: #f7b731;
+}
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 2rem;
+}
+
+.card {
+    background: #2f3542;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #dfe4ea;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.8rem;
+    background: #1e272e;
+    border: 1px solid #57606f;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #f7b731;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 1rem;
+    background: #FFA502;
+    border: none;
+    border-radius: 8px;
+    color: #2f3542;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-submit:hover {
+    background: #eccc68;
+}
+
+/* Listings List */
+.listing-item {
+    background: rgba(255, 255, 255, 0.05);
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item-status.active {
+    color: #2ed573;
+    font-weight: bold;
+    font-size: 0.8rem;
+    background: rgba(46, 213, 115, 0.1);
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+/* Marketplace Grid */
+.marketplace-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 2rem;
+}
+
+.market-card {
+    background: #2f3542;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.market-card:hover {
+    transform: translateY(-5px);
+    border-color: #f7b731;
+}
+
+.market-card-header {
+    padding: 1.5rem;
+    background: rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price-badge {
+    background: #f7b731;
+    color: #2f3542;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.market-card-body {
+    padding: 1.5rem;
+}
+
+.progress-bar {
+    height: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: #2ed573;
+}
+
+.market-card-footer {
+    padding: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.buy-controls {
+    display: flex;
+    gap: 10px;
+}
+
+.buy-controls input {
+    width: 80px;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #57606f;
+    background: #1e272e;
+    color: #fff;
+}
+
+.btn-buy {
+    flex: 1;
+    background: #2ed573;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-own {
+    width: 100%;
+    padding: 8px;
+    background: transparent;
+    border: 1px dashed #57606f;
+    color: #57606f;
+    cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+}
